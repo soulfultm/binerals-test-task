@@ -1,0 +1,51 @@
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #555b6e;
+    top: 100%;
+    transform: translate(0, -100%);
+    display: flex;
+    justify-content: center;
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        .fw-first-block {
+            height: 14px;
+            margin: 20px 0 22px 0;
+            .fw-link:not(:first-child):not(:last-child) {
+                margin: 0 20px;
+            }
+            .home {
+                width: 33px;
+            }
+            .chat {
+                width: 25px;
+            }
+            .setting {
+                width: 44px;
+            }
+        }
+
+        .fw-link {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 12px;
+            color: #faf9f9;
+            height: 100%;
+        }
+        .fw-second-block {
+            height: 12px;
+            text-align: center;
+            .notice-copyright {
+                vertical-align: top;
+                width: 79px;
+                height: 12px;
+                font-size: 10px;
+                text-align: center;
+                color: #ffffffff;
+            }
+        }
+    }
+}

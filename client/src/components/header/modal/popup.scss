@@ -1,0 +1,111 @@
+.popup {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+}
+.popup.active {
+    opacity: 1;
+    transition: 1s;
+    pointer-events: all;
+    z-index: 1;
+}
+.modal-content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    transform: scale(0.5);
+    transition: 1s;
+}
+.modal-content.active {
+    transform: scale(1);
+    transition: 1s;
+}
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 40px 0;
+    height: 300px;
+    margin: unset;
+    align-items: center;
+    justify-content: center;
+    .popup-input {
+        margin-bottom: 35px !important;
+        text-align: center;
+    }
+    .popup-input ::placeholder {
+        text-align: center;
+    }
+    .label-email,
+    .label-password {
+        position: relative;
+        width: 14px;
+        height: 16px;
+    }
+    .invalidEmail::before,
+    .invalidPassword::before {
+        content: "\2716";
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+        color: rgb(224, 69, 69);
+    }
+    .validEmail::before,
+    .validPassword::before {
+        content: "\2714";
+
+        display: block;
+        width: 5px;
+        height: 5px;
+        color: rgb(70, 224, 70);
+    }
+    .registration-button {
+        background-color: #4a4a4a;
+        pointer-events: none;
+    }
+    .validvalid {
+        pointer-events: all;
+        background-color: #26a69a;
+    }
+}
+.popup-span {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #4a4a4a;
+    padding: 0 0 10px 0;
+}
+.popup-inform {
+    text-align: center;
+}
+.popup-form {
+    .popup-label-file {
+        margin-bottom: 20px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .popup-button-files {
+        width: 100px;
+    }
+    input[type="file"] {
+        display: none;
+    }
+    .btn-files-upload {
+        margin-bottom: 20px;
+    }
+}
+input[type="checkbox"]:checked + label {
+    color: red;
+}

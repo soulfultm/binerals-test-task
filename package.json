@@ -1,0 +1,31 @@
+{
+  "name": "binerals",
+  "version": "1.0.0",
+  "description": "binerals-task",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.0.0",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "express-validator": "^6.14.0",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.6",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "react-router": "^6.2.1",
+    "uuid": "^8.3.2"
+  }
+}

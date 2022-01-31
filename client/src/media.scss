@@ -1,0 +1,46 @@
+@media (max-width: 480px) {
+    .close {
+        width: 0;
+    }
+    .open {
+        width: 100%;
+    }
+    .open + .content-and-footer {
+        width: 0;
+        overflow: hidden;
+    }
+    .header-side {
+        width: 100%;
+    }
+    .header-content {
+        width: 0;
+    }
+    .sidebar span {
+        left: 25%;
+    }
+    .profile {
+        height: 60px;
+        width: 100%;
+        img {
+            margin-left: 10px;
+        }
+    }
+    .userName {
+        color: black !important;
+    }
+    .polygon-1::before {
+        color: black !important;
+    }
+    .modal-content {
+        width: 250px;
+        height: 300px;
+    }
+    .popup-form {
+        justify-content: unset;
+        height: auto;
+    }
+    .link-auth{
+        height: 60px;
+        align-items: center;
+    }
+}

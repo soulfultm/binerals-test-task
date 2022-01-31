@@ -1,0 +1,59 @@
+.app {
+    max-width: 1920px;
+}
+.header-top {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #555b6e;
+    position: fixed;
+    z-index: 1;
+}
+.header-side {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .logo {
+        margin-left: 20px;
+        width: 81px;
+        height: 42px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #ffffff;
+    }
+    .sidebar-toggle {
+        width: 60px;
+        height: 60px;
+    }
+    .menu-1 {
+        width: 24px;
+        height: 24px;
+    }
+    .vector::before {
+        content: "\2630";
+        color: #ffffff;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        cursor: pointer;
+    }
+}
+.header-content {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .user {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

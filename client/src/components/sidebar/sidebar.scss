@@ -1,0 +1,63 @@
+.sidebar {
+    height: 1120px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    .Home,
+    .Chat,
+    .Setting,
+    .Logout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        color: #555b6e;
+        // background: #89b0ae;
+    }
+    .lb-logout {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        transform: translate(0, -100%);
+    }
+    .listBar {
+        cursor: pointer;
+    }
+    .listActive {
+        background-color: #89b0ae;
+    }
+    span {
+        width: 43px;
+        height: 19px;
+        font-size: 16px;
+        position: absolute;
+        left: 50%;
+    }
+}
+.open {
+    width: 160px;
+    transition: linear 1s;
+    span {
+        animation-duration: 3s;
+        animation-name: eye;
+    }
+}
+.close {
+    width: 60px;
+    transition: linear 1s;
+    span {
+        opacity: 0;
+    }
+}
+@keyframes eye {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

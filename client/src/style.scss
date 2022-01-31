@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  cursor: default;
+}
+* {
+  outline: 0 !important;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: unset;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "roboto", sans-serif;
+}
+a,
+span {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+a:hover,
+span:hover {
+  cursor: pointer;
+  color: grey;
+}
+li {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  border-radius: 2px;
+}
+input[type="text"] {
+  border: 1px solid #e5e5e5;
+  background-color: #f7f7f7;
+  outline: none;
+  padding: 8px 13px 7px;
+}
+input {
+  border: 1px solid #e5e5e5;
+  background-color: #f7f7f7;
+  outline: none;
+  padding: 8px 13px 7px;
+}
+ul {
+  padding: unset;
+  margin: unset;
+}
+// header \\
+.middle-part {
+  display: flex;
+  padding-top: 60px;
+}
+.content-and-footer {
+  position: relative;
+  width: 100%;
+}
+// end of header \\

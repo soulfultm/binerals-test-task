@@ -1,0 +1,4 @@
+{
+	"PORT": "5000",
+    "mongoUrl": "mongodb+srv://binerals:1234567890@binerals.esivn.mongodb.net/Binerals?retryWrites=true&w=majority"
+}
